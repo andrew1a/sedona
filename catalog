@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+  </head>
+  <body>
+    <div class="main-container">
+     <header class="page-header">
+        <a class="header-logo">
+          <img class="logo" src="images/logo.svg" alt="Логотип Седона" width="140" height="70">
+        </a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item navigation-item-current"> 
+              <a class="navigation-link navigation-link-current" href="#">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+           </li>
+           <li class="navigation-item">
+              <a class="navigation-link" href="#">Гостиницы</a>
+           </li>
+        </ul>
+        <ul class="user">
+            <li class="user-item"> 
+              <a class="user-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="user-item">
+              <a class="user-link heart" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="quantity">12</span>
+              </a>
+            </li>
+            <li class="user-item">
+              <button class="button user-link button-broun" href="#">Хочу сюда!</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="inner-main">
+        <div class="hero-container">
+          <header class="inner-header">
+            <h1>Гостиницы Седоны</h1>
+            <ul class="broad-breanches">
+            <li class="broad-breanches-item">
+               <a href="index.html">
+                  <img src="images/small.svg" alt="Главная" width="12" height="12">
+                  <span class="visually-hidden">Главная</span>
+               </a>
+              </li>
+              <li class="broad-breanches-item">
+                <a>
+                  <img class="arrow" src="images/arrow.svg" alt="Главная" width="7" height="10">
+                  <span>Гостиницы</span>
+                </a>
+              </li>
+            </ul>
+          </header>
+          <section class="catalog">
+            <h2 class="visually-hidden" hidden>Выбор жилья</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <fieldset>
+                <legend>Инфраструктура</legend>
+                <label class="checkbox">
+                <input type="checkbox" name="poll" class="ch"><span class="checkbox">Бассейн</span>
+                </label>
+                <label class="checkbox">
+                 <input type="checkbox" name="parked" class="ch"><span class="checkbox">
+                 Парковка</span>
+                </label>
+                <label class="checkbox">
+                 <input type="checkbox" name="wi-fi"><span class="checkbox">Wi-fi</span>
+                </label>
+              </fieldset>
+              <fieldset>
+               <legend>Тип жилья</legend>
+                <label class="radio">
+                  <input type="radio" name="shelter" value="hotel" checked><span class="radio">Гостиница</span>
+                </label>
+                <label class="radio">
+                 <input type="radio" name="shelter" value="motel"><span class="radio">Мотель</span>
+                </label>
+               <label class="radio">
+                 <input type="radio" name="shelter" value="aparchement"><span class="radio">Апартаменты</span>
+                </label>
+              </fieldset>
+              <fieldset class="price-min-max">
+                <legend>Стоимость, Р:</legend>
+                  <div class="price-min-max-wrapper">
+                    <p>
+                      <input type="number" name="min-price" id="min-price" value="0">
+                      <label class="cost" for="min-price">от</label>
+                    </p>
+                    <p>
+                      <input type="number" name="max-price" id="max-price" value="9000">
+                      <label class="cost" for="max-price">до</label> 
+                    </p>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px;">
+                      <button class="range-toggle toggle-min" type="button">
+                       <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                    </div>
+                  </div>
+              </fieldset>
+              <div class="form-container">
+                <input type="submit"  class="button-blue" value="Применить">
+                <button type="reset">Сбросить</button>
+              </div>
+            </form>
+         </section>
+        </div>
+        <section class="search-result">
+          <div class="header-sort-container">
+            <h2 class="search-result-title">Найдено гостиниц</h2>
+            <p class="search-result-count">38</p>
+            <select class="sort-select">
+            <option>Самые дешевые</option>
+            </select>
+            <div class="sort-container">
+              <a class="sort sort-current" href="i#" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"><rect width="46" height="46" x="1" y="1" stroke="#000" stroke-width="2" rx="3"/><g fill="#000" clip-path="url(#a)"><path d="M20 17h-4v6h4v-6ZM32 17h-4v6h4v-6ZM26 17h-4v6h4v-6ZM20 25h-4v6h4v-6ZM32 25h-4v6h4v-6ZM26 25h-4v6h4v-6Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M16 17h16v14H16z"/></clipPath></defs></svg>
+              </a>
+              <a class="sort" href="i#" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"><rect width="46" height="46" x="1" y="1" stroke="#E5E5E5" stroke-width="2" rx="3"/><g fill="#000" clip-path="url(#a)"><path d="M32 29H16v2h16v-2ZM30 19v6H18v-6h12Zm2-2H16v10h16V17Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M16 17h16v14H16z"/></clipPath></defs></svg>
+              </a>
+              <a class="sort" href="i#" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"><rect width="46" height="46" x="1" y="1" stroke="#E5E5E5" stroke-width="2" rx="3"/><g fill="#000" clip-path="url(#a)"><path d="M18 17h-2v2h2v-2ZM32 17H20v2h12v-2ZM18 21h-2v2h2v-2ZM32 21H20v2h12v-2ZM18 25h-2v2h2v-2ZM32 25H20v2h12v-2ZM18 29h-2v2h2v-2ZM32 29H20v2h12v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M16 17h16v14H16z"/></clipPath></defs></svg>
+              </a>
+            </div>
+          </div>
+          <ul class="product-list">
+            <li class="product-item">
+             <a class="picture-link" href="#">
+               <img src="images/hotels/hotel-1.jpg" width="300" height="212" alt="звездное небо, вид с пещеры">
+              </a>
+              <a class="title-link">
+               <h3 class="product-title">Amara Resort & Spa</h3>
+              </a>
+              <p>Гостиница</p>
+              <p class="price">От 1000 руб</p> 
+              <a href="" class="show-more button-broun">Подробнее</a>
+              <button class="favorites button-blue" type="button">В избранное</button>
+              <div class="stars">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <span class="visually-hidden">Количество звезд</span>
+              </div>  
+              <p class="rating">Рейтинг</p>  
+            </li>
+            <li class="product-item">
+              <a class="picture-link" href="#">
+                <img src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Радуга на фоне гор">
+              </a>
+              <a class="title-link" href="#">
+                <h3 class="product-title">Amara Resort & Spa</h3>
+              </a>
+              <p>Гостиница</p>
+              <p class="price">От 1000 руб</p> 
+              <a href="" class="show-more button-broun">Подробнее</a>
+              <button class="favorites favorites-plus" type="button">В избранном</button>
+              <div class="stars">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <span class="visually-hidden">Количество звезд</span>
+              </div>    
+              <p class="rating">Рейтинг</p>  
+            </li>
+            <li class="product-item">
+              <a class="picture-link" href="#">
+                <img src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Горы вдали">
+              </a>
+              <a class="title-link" href="">
+                <h3 class="product-title">Amara Resort & Spa</h3>
+              </a>
+              <p>Гостиница</p>
+              <p class="price">От 1000 руб</p> 
+              <a href="" class="show-more button-broun">Подробнее</a>
+              <button class="favorites button-blue" type="button">В избранное</button>
+              <div class="stars">
+               <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <span class="visually-hidden">Количество звезд</span>
+             </div>   
+             <p class="rating">Рейтинг</p>  
+            </li>
+            <li class="product-item">
+              <a class="picture-link" href="#">
+                <img src="images/hotels/hotel-4.jpg" width="300" height="212" alt="Горы на фоне ночного неба">
+              </a>
+              <a class="title-link" href="">
+                <h3 class="product-title">Amara Resort & Spa</h3>
+              </a>
+              <p>Гостиница</p>
+              <p class="price">От 1000 руб</p> 
+              <a href="" class="show-more button-broun">Подробнее</a>
+              <button class="favorites button-blue" type="button">В избранное</button>
+              <div class="stars">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <img src="images/star.svg" width="18" height="17" alt="звезда">
+                <span class="visually-hidden">Количество звезд</span>
+              </div>  
+              <p class="rating">Рейтинг</p>  
+           </li>
+          </ul>
+         <ul class="pagination">
+            <li class="pagination-item">
+             <a class="pagination-link pagination-link-current"><span>1</span></a>
+           </li>
+            <li class="pagination-item">
+              <a class="pagination-link button-blue" href="#"><span>2</span></a>
+            </li>
+            <li class="pagination-item">
+             <a class="pagination-link button-blue" href="#"><span>3</span></a>
+            </li>
+            <li class="pagination-item">
+             <a class="pagination-link button-blue" href="#"><span>4</span></a>
+           </li>
+           <li class="pagination-item">
+              <a class="pagination-link button-blue"><span>...</span></a>
+           </li>
+           <li class="pagination-item">
+             <a class="pagination-link button-blue" href="#"><span>10</span></a>
+            </li>
+          </ul>
+        </section>
+        <section class="subscribe">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+           <div class='subscribe-container'>
+              <input type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+              <button type="submit" class="subscribe-submit button-blue">Подписаться</button>
+            </div>
+          </form>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="social-list">
+              <li>
+                <a class="button-social" href="https://vk.com/htmlacademy">
+                  <img src="images/social/vk.svg" alt="Вконтаке" width="24" height="14">
+                  <span class="visually-hidden">Vkontakte</span>
+                </a>
+              </li>
+              <li>
+                <a class="button-social" href="https://t.me/htmlacademy">
+                  <img src="images/social/Telegram.svg" alt="telegram" width="18" height="16">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+              <li>
+                <a class="button-social youtube" href="https://Youtube.com/user/htmlacademyru">
+                  <!-- <img src="images/social/youtube.svg" alt="Youtube" width="22" height="17"> -->
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <h2 class="visually-hidden">Телефон</h2>
+            <address class="footer-contact">
+              +7 (812) 812-12-12
+            </address>
+          </li>
+          <li class="footer-item">
+            <h2 class="visually-hidden">Разработчик</h2>
+            <img class="footer-logo" src="images/academy.svg" alt="Html Academy">
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
